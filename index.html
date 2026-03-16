@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Divyashakti Enterprise</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+
+        <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#060606;
+color:white;
+height:200vh;
+}
+
+/* TOP CONTACT BAR */
+
+.topbar{
+background:#0b0b0b;
+border-bottom:1px solid rgba(255,255,255,0.05);
+padding:8px 20px;
+font-size:13px;
+}
+
+.topbar-container{
+max-width:1300px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.topbar a{
+color:#aaa;
+text-decoration:none;
+margin-left:15px;
+}
+
+.topbar a:hover{
+color:#fff;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+backdrop-filter:blur(10px);
+background:rgba(0,0,0,0.6);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+/* NAV CONTAINER */
+
+.nav-container{
+max-width:1300px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 20px;
+}
+
+/* LOGO */
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:55px;
+width: 90px;
+}
+
+.logo span{
+font-weight:600;
+font-size:18px;
+
+background:linear-gradient(90deg,#2b8cff,#ff6aa2);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* NAV MENU */
+
+.nav-menu{
+display:flex;
+align-items:center;
+gap:28px;
+}
+
+.nav-menu a{
+text-decoration:none;
+color:#ddd;
+font-size:15px;
+position:relative;
+transition:0.3s;
+}
+
+/* FUTURISTIC HOVER */
+
+.nav-menu a:hover{
+color:white;
+}
+
+.nav-menu a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:linear-gradient(90deg,#2b8cff,#ff6aa2);
+transition:0.4s;
+}
+
+.nav-menu a:hover::after{
+width:100%;
+}
+
+/* CTA BUTTON */
+
+.cta{
+padding:10px 18px;
+
+background:linear-gradient(90deg,#2b8cff,#ff6aa2);
+
+border-radius:30px;
+color:white !important;
+font-weight:500;
+transition:0.3s;
+}
+
+.cta:hover{
+transform:translateY(-2px);
+box-shadow:0 0 15px rgba(255,100,180,0.4);
+}
+
+/* HAMBURGER */
+
+.hamburger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.hamburger span{
+width:26px;
+height:3px;
+background:white;
+margin:4px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.nav-menu{
+position:absolute;
+top:70px;
+left:-100%;
+width:100%;
+flex-direction:column;
+background:#080808;
+padding:40px 0;
+gap:25px;
+transition:0.4s;
+}
+
+.nav-menu.active{
+left:0;
+}
+
+.hamburger{
+display:flex;
+}
+
+.topbar-container{
+flex-direction:column;
+gap:5px;
+}
+
+}
+
+</style>
+    </head>
+
+    <body>
+
+        <!-- TOP CONTACT BAR -->
+
+        <div class="topbar">
+
+            <div class="topbar-container">
+
+                <div>
+                    ⚡ India's Next Generation EV Scooter
+                </div>
+
+                <div>
+                    📞 9737561301
+                    <a
+                        href="mailto:ride@thedivyashakti.com">ride@thedivyashakti.com</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="nav-container">
+
+                <!-- LOGO -->
+
+                <div class="logo">
+                    <img src="assets/images/logo-only-1.png"
+                        alt="Divyashakti Enterprise">
+                    <!-- <span>Divyashakti</span> -->
+                </div>
+
+                <!-- NAVIGATION -->
+
+                <nav class="nav-menu" id="navMenu">
+
+                    <a href="#">Home</a>
+                    <a href="#">Scooters</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Charging</a>
+                    <a href="#">Dealership</a>
+                    <a href="#">About</a>
+
+                    <a href="#" class="cta">Book Test Ride</a>
+
+                </nav>
+
+                <!-- HAMBURGER -->
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <script>
+
+/* MOBILE MENU */
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+
+navMenu.classList.toggle("active");
+
+});
+
+</script>
+
+    </body>
+</html>
