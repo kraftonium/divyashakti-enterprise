@@ -227,11 +227,52 @@ header {
     transform: translateY(-60px);
 }
 
+.fade-down {
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: all 0.9s ease;
+}
+
 /* WHEN VISIBLE */
 
 .show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* FADE ANIMATION */
+
+.fade-up {
+
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+
+}
+
+.fade-up.show {
+
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+/* STAGGER DELAYS */
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
 }
 
 /* Home page starts here */
@@ -553,6 +594,9 @@ header {
 /* about us section ends here */
 
 /* ev action section starts here */
+
+/* ev action section starts here */
+
 .ev-options {
 
     padding: 120px 0;
@@ -566,7 +610,7 @@ header {
     max-width: 1300px;
     margin: auto;
 
-    height: 340px;
+    height: 360px;
 
 }
 
@@ -575,7 +619,6 @@ header {
     flex: 1;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -595,8 +638,9 @@ header {
 
 .option img {
 
-    height: 120px;
-    margin-bottom: 15px;
+    /* height: 120px; */
+    height: 160px;
+    transition: 0.4s;
 
 }
 
@@ -604,8 +648,9 @@ header {
 
 .icon-option .icon {
 
-    font-size: 50px;
-    margin-bottom: 15px;
+    /* font-size: 50px; */
+    font-size: 120px;
+    transition: 0.4s;
 
 }
 
@@ -613,13 +658,22 @@ header {
 
 .option-content {
 
+    position: absolute;
+
+    bottom: 40px;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(20px);
+
     text-align: center;
+
     padding: 0 20px;
 
     opacity: 0;
-    transform: translateY(20px);
 
     transition: 0.4s;
+
+    width: 80%;
 
 }
 
@@ -662,10 +716,26 @@ header {
 
 }
 
+/* IMAGE MOVE UP ON HOVER */
+
+.option:hover img {
+    margin-bottom: 3rem;
+    transform: translateY(-40px) scale(1.05);
+
+}
+
+.option:hover .icon {
+    margin-bottom: 3rem;
+    transform: translateY(-30px) scale(1.1);
+
+}
+
+/* CONTENT APPEAR */
+
 .option:hover .option-content {
 
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 
 }
 
@@ -684,7 +754,10 @@ header {
 
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        padding: 40px 20px;
+
+        padding: 50px 20px;
+
+        flex-direction: column;
 
     }
 
@@ -694,16 +767,31 @@ header {
 
     }
 
+    .option img {
+
+        margin-bottom: 15px;
+
+    }
+
     .option-content {
 
+        position: static;
+
         opacity: 1;
+
         transform: none;
+
+        margin-top: 10px;
 
     }
 
 }
 
 /* ev action section ends here */
+
+/* ev action section ends here */
+
+
 
 /* our ev scooters section starts here  */
 
@@ -869,5 +957,388 @@ header {
 }
 
 /* our ev scooters section ends here  */
+
+/* ev offer section starts here */
+/* 
+.ev-offer-spotlight {
+
+    padding: 140px 20px;
+    background: #050505;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.offer-wrapper {
+
+    max-width: 900px;
+    width: 100%;
+
+    text-align: center;
+
+    background: #0d0d0d;
+
+    border-radius: 20px;
+
+    padding: 60px 40px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+} */
+
+/* GRADIENT GLOW */
+
+/* .offer-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: radial-gradient(circle,
+            rgba(43, 140, 255, 0.25),
+            rgba(255, 106, 162, 0.2),
+            transparent);
+
+    top: -150px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    filter: blur(100px);
+
+} */
+
+/* BADGE */
+
+/* .offer-badge {
+
+    display: inline-block;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+
+    color: white;
+
+    padding: 6px 18px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+} */
+
+/* TITLE */
+/* 
+.offer-wrapper h2 {
+
+    font-size: 40px;
+    line-height: 1.2;
+
+}
+
+.offer-wrapper span {
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+} */
+
+/* TEXT */
+
+/* .offer-wrapper p {
+
+    color: #aaa;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+} */
+
+/* VEHICLE */
+
+/* .offer-vehicle {
+
+    margin: 40px 0;
+
+}
+
+.offer-vehicle img {
+
+    max-width: 420px;
+    width: 100%;
+
+    transition: 0.5s;
+
+}
+
+.offer-vehicle img:hover {
+
+    transform: scale(1.05);
+
+} */
+
+/* BUTTON */
+/* 
+.offer-cta {
+
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+
+} */
+
+/* MOBILE */
+
+/* @media(max-width:768px) {
+
+    .offer-wrapper {
+
+        padding: 50px 25px;
+
+    }
+
+    .offer-wrapper h2 {
+
+        font-size: 30px;
+
+    }
+
+    .offer-vehicle img {
+
+        max-width: 300px;
+
+    }
+
+} */
+
+/* ev offer section ends here */
+
+.ev-offer-split {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 520px;
+
+    background: #050505;
+
+    position: relative;
+
+}
+
+/* LEFT SIDE */
+
+.offer-left {
+
+    padding: 100px 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.offer-left h2 {
+
+    font-size: 48px;
+    line-height: 1.2;
+
+}
+
+.offer-left span {
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.offer-left p {
+
+    color: #aaa;
+    margin-top: 20px;
+    max-width: 450px;
+
+}
+
+.offer-price {
+
+    margin-top: 30px;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+}
+
+.offer-price span {
+
+    font-size: 36px;
+
+}
+
+/* BUTTON */
+
+.offer-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+/* RIGHT SIDE */
+
+.offer-right {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg,
+            rgba(43, 140, 255, 0.08),
+            rgba(255, 106, 162, 0.08));
+
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+/* VEHICLE FRAME */
+
+.vehicle-circle {
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle,
+            rgba(43, 140, 255, 0.2),
+            rgba(255, 106, 162, 0.2),
+            transparent);
+
+    position: relative;
+
+}
+
+/* VEHICLE */
+
+.vehicle-circle img {
+
+    max-width: 320px;
+
+    animation: floatScooter 4s ease-in-out infinite;
+
+}
+
+/* FLOAT */
+
+@keyframes floatScooter {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .ev-offer-split {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .offer-right {
+
+        clip-path: none;
+        padding: 50px 0;
+
+    }
+
+    .offer-left {
+
+        padding: 80px 30px;
+        text-align: center;
+
+    }
+
+    .vehicle-circle {
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .vehicle-circle img {
+
+        max-width: 230px;
+
+    }
+
+}
+
+.vehicle-circle img {
+    animation: floatScooter 4s ease-in-out infinite;
+}
+
+@keyframes floatScooter {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* Home page ends here */

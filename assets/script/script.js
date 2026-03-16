@@ -88,4 +88,6 @@ const hiddenElements = document.querySelectorAll(".fade-up, .fade-down");
 
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+
 // fade animations
