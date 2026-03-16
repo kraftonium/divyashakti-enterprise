@@ -6,211 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Divyashakti Enterprise</title>
-
+        <link rel="stylesheet" href="assets/css/style.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
             rel="stylesheet">
 
-        <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#060606;
-color:white;
-height:200vh;
-}
-
-/* TOP CONTACT BAR */
-
-.topbar{
-background:#0b0b0b;
-border-bottom:1px solid rgba(255,255,255,0.05);
-padding:8px 20px;
-font-size:13px;
-}
-
-.topbar-container{
-max-width:1300px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.topbar a{
-color:#aaa;
-text-decoration:none;
-margin-left:15px;
-}
-
-.topbar a:hover{
-color:#fff;
-}
-
-/* HEADER */
-
-header{
-position:sticky;
-top:0;
-z-index:999;
-backdrop-filter:blur(10px);
-background:rgba(0,0,0,0.6);
-border-bottom:1px solid rgba(255,255,255,0.05);
-}
-
-/* NAV CONTAINER */
-
-.nav-container{
-max-width:1300px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 20px;
-}
-
-/* LOGO */
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-height:55px;
-width: 90px;
-}
-
-.logo span{
-font-weight:600;
-font-size:18px;
-
-background:linear-gradient(90deg,#2b8cff,#ff6aa2);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-/* NAV MENU */
-
-.nav-menu{
-display:flex;
-align-items:center;
-gap:28px;
-}
-
-.nav-menu a{
-text-decoration:none;
-color:#ddd;
-font-size:15px;
-position:relative;
-transition:0.3s;
-}
-
-/* FUTURISTIC HOVER */
-
-.nav-menu a:hover{
-color:white;
-}
-
-.nav-menu a::after{
-content:"";
-position:absolute;
-left:0;
-bottom:-6px;
-width:0%;
-height:2px;
-background:linear-gradient(90deg,#2b8cff,#ff6aa2);
-transition:0.4s;
-}
-
-.nav-menu a:hover::after{
-width:100%;
-}
-
-/* CTA BUTTON */
-
-.cta{
-padding:10px 18px;
-
-background:linear-gradient(90deg,#2b8cff,#ff6aa2);
-
-border-radius:30px;
-color:white !important;
-font-weight:500;
-transition:0.3s;
-}
-
-.cta:hover{
-transform:translateY(-2px);
-box-shadow:0 0 15px rgba(255,100,180,0.4);
-}
-
-/* HAMBURGER */
-
-.hamburger{
-display:none;
-flex-direction:column;
-cursor:pointer;
-}
-
-.hamburger span{
-width:26px;
-height:3px;
-background:white;
-margin:4px;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.nav-menu{
-position:absolute;
-top:70px;
-left:-100%;
-width:100%;
-flex-direction:column;
-background:#080808;
-padding:40px 0;
-gap:25px;
-transition:0.4s;
-}
-
-.nav-menu.active{
-left:0;
-}
-
-.hamburger{
-display:flex;
-}
-
-.topbar-container{
-flex-direction:column;
-gap:5px;
-}
-
-}
-
-</style>
     </head>
 
     <body>
 
-        <!-- TOP CONTACT BAR -->
+        <!-- navbar starts here -->
+
+        <!-- DESKTOP TOPBAR -->
 
         <div class="topbar">
 
             <div class="topbar-container">
 
                 <div>
-                    ⚡ India's Next Generation EV Scooter
+                    ⚡ India's Next Generation EV Scooters
                 </div>
 
                 <div>
@@ -223,8 +37,6 @@ gap:5px;
 
         </div>
 
-        <!-- HEADER -->
-
         <header>
 
             <div class="nav-container">
@@ -232,12 +44,11 @@ gap:5px;
                 <!-- LOGO -->
 
                 <div class="logo">
-                    <img src="assets/images/logo-only-1.png"
-                        alt="Divyashakti Enterprise">
-                    <!-- <span>Divyashakti</span> -->
+                    <img src="assets/images/logo/logo-only-1.png">
+                    <span>Divyashakti Enterprise</span>
                 </div>
 
-                <!-- NAVIGATION -->
+                <!-- NAV -->
 
                 <nav class="nav-menu" id="navMenu">
 
@@ -249,6 +60,18 @@ gap:5px;
                     <a href="#">About</a>
 
                     <a href="#" class="cta">Book Test Ride</a>
+
+                    <!-- MOBILE CONTACT -->
+
+                    <div class="mobile-contact">
+
+                        📞 9737561301
+
+                        <a href="mailto:ride@thedivyashakti.com">
+                            ride@thedivyashakti.com
+                        </a>
+
+                    </div>
 
                 </nav>
 
@@ -264,20 +87,395 @@ gap:5px;
 
         </header>
 
-        <script>
+        <!-- navbar ends here -->
 
-/* MOBILE MENU */
+        <!-- hero section starts here -->
 
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("navMenu");
+        <!-- 
+        <section class="hero">
 
-hamburger.addEventListener("click", () => {
+            <div class="hero-container">
 
-navMenu.classList.toggle("active");
+                <div class="hero-text">
 
-});
+                    <h1>
+                        Drive The Future <br>
+                        <span>With <br> Divyashakti</span>
+                    </h1>
 
-</script>
+                    <p>
+                        High performance electric scooters
+                        built for the next generation of mobility.
+                    </p>
 
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary">Explore Vehicles</a>
+                        <a href="#" class="btn-secondary">Book Test Ride</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image-wrapper">
+
+                    <img id="heroImage" class="hero-image active"
+                        src="assets/images/vehicles/victory.png"
+                        alt="Divyashakti Victory">
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-text fade-up">
+
+                    <h1>
+                        Drive The Future <br>
+                        <span>With <br> Divyashakti</span>
+                    </h1>
+
+                    <p>
+                        High performance electric scooters
+                        built for the next generation of mobility.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary">Explore Vehicles</a>
+                        <a href="#" class="btn-secondary">Book Test Ride</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image-wrapper fade-down">
+
+                    <img id="heroImage" class="hero-image active"
+                        src="assets/images/vehicles/victory.png"
+                        alt="Divyashakti Victory">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- hero section ends here -->
+
+        <section class="ev-features-marquee">
+
+            <div class="marquee">
+
+                <div class="marquee-content">
+
+                    <span>⚡ 45kmph Top Speed</span>
+                    <span>🔋 Lithium Ion Battery</span>
+                    <span>🛑 Front Disc Brake</span>
+                    <span>🔐 Anti Theft Alarm System</span>
+                    <span>📡 Remote Lock System</span>
+                    <span>↩ Reverse Gear</span>
+                    <span>🔋 Long Range Battery</span>
+                    <span>⚡ Eco Friendly Electric Drive</span>
+
+                    <!-- repeat for smooth loop -->
+
+                    <span>⚡ 45kmph Top Speed</span>
+                    <span>🔋 Lithium Ion Battery</span>
+                    <span>🛑 Front Disc Brake</span>
+                    <span>🔐 Anti Theft Alarm System</span>
+                    <span>📡 Remote Lock System</span>
+                    <span>↩ Reverse Gear</span>
+                    <span>🔋 Long Range Battery</span>
+                    <span>⚡ Eco Friendly Electric Drive</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- about us section starts here -->
+
+        <!-- <section class="about">
+
+            <div class="about-container">
+
+                <div class="about-text">
+
+                    <h2>
+                        DIVYASHAKTI ENTERPRISE <br>
+                        <span>GANDHINAGAR'S LARGEST EV VEHICLES SHOWROOM</span>
+                    </h2>
+
+                    <p>
+                        Divyashakti Enterprise is a trusted electric vehicle
+                        showroom in Gandhinagar offering high-quality electric
+                        scooters and EV auto rickshaws for personal and
+                        commercial use. We proudly serve customers from
+                        Gandhinagar, Ahmedabad, and nearby regions with reliable
+                        and affordable electric mobility solutions.
+                    </p>
+
+                    <div class="about-contact">
+
+                        <h4>HAVE ANY QUESTION?</h4>
+
+                        <a href="tel:+919737561301" class="about-phone">
+                            +91 97375 61301
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="about-highlight">
+
+                    <div class="highlight-box">
+                        ⚡ Premium EV Vehicles
+                    </div>
+
+                    <div class="highlight-box">
+                        🔋 Eco Friendly Mobility
+                    </div>
+
+                    <div class="highlight-box">
+                        🚚 Commercial EV Options
+                    </div>
+
+                    <div class="highlight-box">
+                        📍 Gandhinagar Showroom
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+        <section class="about">
+
+            <div class="about-container">
+
+                <div class="about-text fade-up">
+
+                    <h2>
+                        DIVYASHAKTI ENTERPRISE <br>
+                        <span>GANDHINAGAR'S LARGEST EV VEHICLES SHOWROOM</span>
+                    </h2>
+
+                    <p>
+                        Divyashakti Enterprise is a trusted electric vehicle
+                        showroom in Gandhinagar offering high-quality electric
+                        scooters and EV auto rickshaws for personal and
+                        commercial use. We proudly serve customers from
+                        Gandhinagar, Ahmedabad, and nearby regions with reliable
+                        and affordable electric mobility solutions.
+                    </p>
+
+                    <div class="about-contact">
+
+                        <h4>HAVE ANY QUESTION?</h4>
+
+                        <a href="tel:+919737561301" class="about-phone">
+                            +91 97375 61301
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="about-highlight fade-down">
+
+                    <div class="highlight-box">
+                        ⚡ Premium EV Vehicles
+                    </div>
+
+                    <div class="highlight-box">
+                        🔋 Eco Friendly Mobility
+                    </div>
+
+                    <div class="highlight-box">
+                        🚚 Commercial EV Options
+                    </div>
+
+                    <div class="highlight-box">
+                        📍 Gandhinagar Showroom
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- about us section ends here -->
+
+        <!-- ev action section starts here -->
+
+        <section class="ev-options">
+
+            <div class="options-container">
+
+                <div class="option">
+
+                    <img src="assets/images/vehicles/victory.png"
+                        alt="EV Scooter">
+
+                    <div class="option-content">
+
+                        <h3>BUY EV SCOOTER</h3>
+
+                        <p>Explore high performance electric scooters built for
+                            modern mobility.</p>
+
+                        <a href="#">Explore Vehicles →</a>
+
+                    </div>
+
+                </div>
+
+                <div class="option">
+
+                    <img src="assets/images/vehicles/passenger.png"
+                        alt="EV Auto">
+
+                    <div class="option-content">
+
+                        <h3>BUY EV AUTO</h3>
+
+                        <p>Reliable electric auto rickshaws for passenger and
+                            commercial use.</p>
+
+                        <a href="#">Explore EV Auto →</a>
+
+                    </div>
+
+                </div>
+
+                <div class="option icon-option">
+
+                    <div class="icon">🤝</div>
+
+                    <div class="option-content">
+
+                        <h3>GET DEALERSHIP</h3>
+
+                        <p>Partner with Divyashakti Enterprise and grow your EV
+                            business.</p>
+
+                        <a href="#">Apply Now →</a>
+
+                    </div>
+
+                </div>
+
+                <div class="option icon-option">
+
+                    <div class="icon">📡</div>
+
+                    <div class="option-content">
+
+                        <h3>BUY GPS TRACKER</h3>
+
+                        <p>Smart GPS solutions for vehicle safety and fleet
+                            management.</p>
+
+                        <a href="#">Buy Now →</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ev action section ends here -->
+
+        <!-- our ev section starts here -->
+
+        <section class="ev-scooters">
+
+            <div class="section-header">
+
+                <h2>Our EV Scooters</h2>
+
+                <p>Explore our range of high performance electric scooters
+                    designed for smart and eco-friendly mobility.</p>
+
+            </div>
+
+            <div class="scooters-grid">
+
+                <!-- Scooter 1 -->
+
+                <div class="scooter-card">
+
+                    <img src="assets/images/vehicles/victory.png"
+                        alt="Victory EV Scooter">
+
+                    <h3>Victory</h3>
+
+                    <p class="price">Starting ₹65,000*</p>
+
+                    <a href="#" class="scooter-btn">View Details</a>
+
+                </div>
+
+                <!-- Scooter 2 -->
+
+                <div class="scooter-card">
+
+                    <img
+                        src="assets/images/vehicles/breeze-removebg-preview.png"
+                        alt="Breeze EV Scooter">
+
+                    <h3>Breeze</h3>
+
+                    <p class="price">Starting ₹62,000*</p>
+
+                    <a href="#" class="scooter-btn">View Details</a>
+
+                </div>
+
+                <!-- Scooter 3 -->
+
+                <div class="scooter-card">
+
+                    <img src="assets/images/vehicles/classic.png"
+                        alt="Classic EV Scooter">
+
+                    <h3>Classic</h3>
+
+                    <p class="price">Starting ₹60,000*</p>
+
+                    <a href="#" class="scooter-btn">View Details</a>
+
+                </div>
+
+                <!-- Scooter 4 -->
+
+                <div class="scooter-card">
+
+                    <img src="assets/images/vehicles/eternal.png"
+                        alt="Eternal EV Scooter">
+
+                    <h3>Eternal</h3>
+
+                    <p class="price">Starting ₹68,000*</p>
+
+                    <a href="#" class="scooter-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- our ev section ends here -->
+
+        <script src="assets/script/script.js"></script>
     </body>
 </html>
