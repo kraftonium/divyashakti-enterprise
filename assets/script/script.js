@@ -1,3 +1,5 @@
+// homepage starts here
+
 // navbar code starts here
 
 
@@ -91,3 +93,11 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 // fade animations
+
+// testimonials starts here
+
+
+// testimonials ends here
+
+
+// homepage ends here
