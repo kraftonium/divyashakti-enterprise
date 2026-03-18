@@ -3791,3 +3791,1149 @@ textarea {
 /* solar form ends here */
 
 /* solar page ends here */
+
+
+/* contact us page starts here */
+
+/* contact intro starts here */
+
+
+.contact-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 120px 20px;
+}
+
+.contact-box {
+    background: #0d0d0d;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* contact intro ends here */
+
+/* showroom section starts here */
+
+.contact-showroom {
+    padding: 120px 20px;
+    text-align: center;
+    background: #060606;
+}
+
+.showroom-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* showroom section ends here */
+
+/* contact cards starts here */
+
+.contact-cards {
+    padding: 100px 20px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #0d0d0d;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* contact cards ends here */
+
+/* contact form intro starts here  */
+
+.contact-form-intro {
+    text-align: center;
+    padding: 60px 20px 20px;
+    color: #aaa;
+}
+
+/* contact form intro ends here  */
+
+/* contact map starts here */
+
+.contact-map {
+    margin-top: 50px;
+}
+
+/* contact map ends here */
+
+/* contact us form starts here */
+
+.contact-form-section {
+
+    padding: 120px 20px;
+    background: #050505;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* WRAPPER */
+
+.contact-form-wrapper {
+
+    max-width: 750px;
+    width: 100%;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    background: #0d0d0d;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+/* TITLE */
+
+.contact-form-wrapper h2 {
+
+    font-size: 32px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* SUBTEXT */
+
+.form-subtext {
+
+    text-align: center;
+    color: #aaa;
+    margin: 10px 0 30px;
+
+}
+
+/* ROW */
+
+.form-row {
+
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+
+}
+
+/* GROUP */
+
+.form-group {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.full {
+    width: 100%;
+}
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    padding: 14px 15px;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border: 1px solid rgba(255, 106, 162, 0.6);
+
+    box-shadow: 0 0 12px rgba(255, 106, 162, 0.2);
+
+}
+
+/* TEXTAREA */
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* ERROR */
+
+.form-group span {
+
+    font-size: 12px;
+    color: #ff4d4d;
+    margin-top: 5px;
+
+}
+
+/* BUTTON */
+
+.contact-submit-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+
+}
+
+.contact-submit-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 30px rgba(255, 106, 162, 0.3);
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+}
+
+/* contact us form ends here */
+
+@media(max-width:768px) {
+
+    .contact-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* contact us page ends here */
+
+
+/* careers page starts here  */
+
+section {
+    padding: 100px 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* 1. INTRO */
+/* ========================= */
+
+.career-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+}
+
+.career-left p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.career-highlight {
+    background: #0d0d0d;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ========================= */
+/* 2. WHY SECTION */
+/* ========================= */
+
+.career-why {
+    text-align: center;
+}
+
+.why-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.why-item {
+    background: #0d0d0d;
+    padding: 15px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ========================= */
+/* 3. JOBS */
+/* ========================= */
+
+.career-jobs {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.job-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255, 106, 162, 0.15);
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.job-card a {
+    text-decoration: none;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+/* ========================= */
+/* 4. CTA */
+/* ========================= */
+
+.career-cta {
+    text-align: center;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+    padding: 120px 20px;
+}
+
+.career-cta p {
+    margin: 10px 0 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ========================= */
+/* 5. FORM */
+/* ========================= */
+
+.career-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    max-width: 700px;
+    width: 100%;
+    background: #0d0d0d;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* FORM ROW */
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    outline: none;
+
+}
+
+/* FOCUS */
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus,
+.form-wrapper select:focus {
+    border: 1px solid rgba(255, 106, 162, 0.5);
+}
+
+/* TEXTAREA */
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* FILE */
+
+.file-label {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.form-row.full {
+    flex-direction: column;
+}
+
+/* BUTTON */
+
+.form-wrapper button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px) {
+
+    .career-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .jobs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* careers page ends here  */
+
+
+/* about us page starts here */
+
+/* CONTAINER */
+
+.about-container,
+.why-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+/* HERO */
+
+.about-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* TIMELINE */
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 20px;
+}
+
+.timeline-item {
+    background: #0d0d0d;
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+/* SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.service-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.service-card img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* WHY */
+
+.why-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-left li {
+    margin: 10px 0;
+}
+
+/* STATS */
+
+.about-stats {
+    padding: 100px 20px;
+    background: #060606;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+
+    .about-container,
+    .why-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .services-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.service-icon {
+
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+
+/* COMMON */
+
+.ev-stats,
+.dealership-stats {
+    padding: 100px 20px;
+    background: #060606;
+}
+
+/* GRID */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARD */
+
+.stat {
+    background: #0d0d0d;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+/* HOVER (NEW 🔥) */
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 106, 162, 0.15);
+}
+
+/* TEXT */
+
+.stat h3 {
+    font-size: 26px;
+    margin-bottom: 8px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* about us page ends here */
+
+/* profit calculator starts here */
+
+/* SECTION */
+
+.ev-calculator {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+/* CONTAINER */
+
+.calc-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TITLE */
+
+.calc-title {
+    text-align: center;
+    font-size: 36px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.calc-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* CARD */
+
+.calc-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* SELECT */
+
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    margin-top: 10px;
+}
+
+/* VEHICLES */
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* PRICE */
+
+.price-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.price-box p {
+    font-size: 28px;
+    color: #ff6aa2;
+}
+
+/* CUSTOMERS */
+
+.customer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* RESULT */
+
+.profit-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+    margin-top: 30px;
+}
+
+.profit-box h1 {
+    font-size: 40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* GRID */
+
+.customer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ITEM */
+
+.customer-item {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* LABEL */
+
+.customer-item label {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* INPUT */
+
+.customer-item input {
+    padding: 10px;
+    border-radius: 8px;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+/* PERCENT */
+
+.customer-item span {
+    font-size: 13px;
+    color: #ff6aa2;
+    font-weight: 500;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+    .customer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* profit calculator ends here */
+
+
+/* privacy policy page starts here */
+
+/* SECTION */
+
+.privacy-section {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+/* CONTAINER */
+
+.privacy-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* TITLE */
+
+.privacy-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.privacy-title span {
+    display: block;
+    font-size: 18px;
+    color: #aaa;
+    -webkit-text-fill-color: #aaa;
+}
+
+.privacy-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+
+.privacy-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s;
+}
+
+/* HOVER */
+
+.privacy-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(43, 140, 255, 0.3);
+}
+
+/* HEADINGS */
+
+.privacy-card h2 {
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TEXT */
+
+.privacy-card p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* CONTACT SPECIAL */
+
+.contact-card {
+    background: linear-gradient(90deg,
+            rgba(43, 140, 255, 0.1),
+            rgba(255, 106, 162, 0.1));
+}
+
+/* ANIMATION */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .privacy-title {
+        font-size: 28px;
+    }
+
+    .privacy-card {
+        padding: 20px;
+    }
+
+}
+
+/* privacy policy page ends here */
+
+
+/* terms and conditions page starts here */
+
+.terms-section {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+.terms-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.terms-title {
+    text-align: center;
+    font-size: 40px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.terms-title span {
+    display: block;
+    font-size: 18px;
+    color: #aaa;
+    -webkit-text-fill-color: #aaa;
+}
+
+.terms-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+
+.terms-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s;
+}
+
+/* HOVER */
+
+.terms-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(43, 140, 255, 0.3);
+}
+
+/* HEADINGS */
+
+.terms-card h2 {
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TEXT */
+
+.terms-card p,
+.terms-card li {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.terms-card ul {
+    padding-left: 20px;
+}
+
+/* HIGHLIGHT */
+
+.highlight-card {
+    background: linear-gradient(90deg,
+            rgba(43, 140, 255, 0.1),
+            rgba(255, 106, 162, 0.1));
+}
+
+/* ANIMATION */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .terms-title {
+        font-size: 28px;
+    }
+
+}
+
+/* terms and conditions page ends here */
