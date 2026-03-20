@@ -4937,3 +4937,736 @@ input {
 }
 
 /* terms and conditions page ends here */
+
+
+/* product page starts here  */
+
+/* product hero section starts here */
+
+.product-hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #050505;
+    padding: 20px;
+}
+
+.product-hero h1 {
+    font-size: 42px;
+}
+
+.product-hero span {
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+    text-decoration: none;
+}
+
+/* product hero section ends here */
+
+/* available scooters starts here */
+
+.models {
+    padding: 100px 20px;
+    background: #0a0a0a;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.model-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.model-card:hover {
+    transform: translateY(-8px);
+}
+
+.model-card img {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:900px) {
+    .models-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* available scooters ends here */
+
+/* key features starts here */
+
+.ev-features {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+.ev-section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ev-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.ev-feature-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ev-feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #2b8cff;
+}
+
+.ev-feature-card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.ev-feature-card h3 {
+    margin-bottom: 8px;
+}
+
+.ev-feature-card p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+    .ev-features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:500px) {
+    .ev-features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* key features ends here */
+
+/* battery & range starts here */
+
+.ev-battery {
+    padding: 120px 20px;
+    background: #0a0a0a;
+}
+
+.battery-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.battery-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.battery-text p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.battery-text ul {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* VISUAL */
+
+.battery-visual {
+    text-align: center;
+}
+
+.battery-bar {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #2b8cff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.battery-fill {
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    animation: charge 2s infinite alternate;
+}
+
+@keyframes charge {
+    from {
+        width: 40%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+    .battery-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* battery & range ends here */
+
+/* why choose us section starts here */
+.ev-why {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+.ev-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(43, 140, 255, 0.2);
+}
+
+.why-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+    .ev-why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:500px) {
+    .ev-why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* why choose us section ends here */
+
+/* cta section starts here */
+
+/* SECTION */
+
+.ev-ride-cta {
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    /* GRADIENT BG */
+    background: linear-gradient(120deg, #2b8cff, #ff6aa2);
+}
+
+/* GLOW EFFECT */
+
+.ev-ride-cta::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(120px);
+    top: -50px;
+    left: -50px;
+}
+
+/* TITLE */
+
+.ev-ride-title {
+    font-size: 38px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+
+.ev-ride-subtitle {
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+.ev-ride-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 30px;
+
+    background: white;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.4s;
+}
+
+/* HOVER */
+
+.ev-ride-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .ev-ride-title {
+        font-size: 26px;
+    }
+
+    .ev-ride-subtitle {
+        font-size: 14px;
+    }
+
+}
+
+/* cta section ends here */
+
+/* book a ride section starts here */
+
+.ev-book-ride {
+    padding: 120px 20px;
+    background: #050505;
+}
+
+.ride-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.ride-title {
+    text-align: center;
+    font-size: 34px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ride-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+
+.ride-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* FULL WIDTH */
+
+.full {
+    grid-column: 1/3;
+}
+
+/* INPUT GROUP */
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    outline: none;
+}
+
+/* FLOAT LABEL */
+
+.form-group label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    font-size: 14px;
+    color: #aaa;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 10px;
+    font-size: 11px;
+    background: #050505;
+    padding: 0 5px;
+    color: #2b8cff;
+}
+
+/* BUTTON */
+
+.ride-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ride-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .ride-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: 1;
+    }
+
+}
+
+/* book a ride section ends here */
+
+/* product page ends here  */
+
+
+/* blogs page starts here */
+
+/* blogs hero section starts here */
+
+.blog-hero {
+    padding: 120px 20px;
+    text-align: center;
+    background: #050505;
+}
+
+.blog-hero h1 {
+    font-size: 42px;
+}
+
+.blog-hero span {
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-hero p {
+    color: #aaa;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* blogs hero section ends here */
+
+/* blog grid starts here */
+
+.blog-section {
+    padding: 100px 20px;
+    background: #0a0a0a;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-card {
+    background: #111;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.blog-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2b8cff;
+    text-decoration: none;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+    .blog-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* blog grid ends here */
+
+/* blog category starts here */
+
+.blog-categories {
+    padding: 60px 20px;
+    text-align: center;
+    background: #050505;
+}
+
+.category-tags span {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #111;
+    color: #ccc;
+}
+
+/* blog category ends here */
+
+/* cta starts here */
+
+.blog-cta {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+}
+
+.blog-cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* cta ends here */
+
+/* blogs page ends here */
+
+
+/* blog details page starts here */
+
+/* blog details hero starts here */
+
+.blog-detail-hero {
+    padding: 120px 20px 60px;
+    background: #050505;
+    text-align: center;
+}
+
+.blog-detail-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.blog-detail-hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.blog-meta {
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-intro {
+    color: #ccc;
+}
+
+/* blog details hero ends here */
+
+/* main article starts here */
+
+.blog-content-section {
+    padding: 60px 20px;
+    background: #0a0a0a;
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: auto;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.blog-content h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-content ul {
+    padding-left: 20px;
+}
+
+/* main article ends here */
+
+/* blog details cta starts here */
+
+.blog-inner-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #2b8cff, #ff6aa2);
+    color: white;
+}
+
+.blog-cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* blog details cta ends here */
+
+/* realted blogs section starts here */
+
+.related-blogs {
+    padding: 100px 20px;
+    background: #050505;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.related-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+}
+
+@media(max-width:768px) {
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* realted blogs section ends here */
+
+/* blog details page ends here */
